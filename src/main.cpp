@@ -138,7 +138,7 @@ void PrzebiegGry()
     int tura=1;
 
     int wiersz=1;
-    int koluma=1;
+    int kolumna=1;
     char plansza[4][4];
 
     char znakGraczaO= 'O';
@@ -161,10 +161,35 @@ void PrzebiegGry()
         string ruchGracza=aktualnyGracz == znakGraczaO ? "Ruch pierwszego gracza" : "Ruch drugiego gracza";
 
         cout<<ruchGracza<<endl;
-        cin>>wiersz;
-        cin>>koluma;
+        bool wierszBool=false;
+        bool kolumnaBool=false;
 
-        plansza[wiersz][koluma]=aktualnyGracz;
+        while(wierszBool==false)
+        {
+            cin>>wiersz;
+            if(wiersz==1 || wiersz==2 || wiersz==3)
+            {
+                wierszBool=true;
+            }
+            else
+            {
+                cout<<"Podaj poprawna wartosc wiersza"<<endl;
+            }
+        }
+         while(kolumnaBool==false)
+        {
+            cin>>kolumna;
+            if(kolumna==1 || kolumna==2 || kolumna==3)
+            {
+                kolumnaBool=true;
+            }
+            else
+            {
+                cout<<"Podaj poprawna wartosc kolumny"<<endl;
+            }
+        }
+
+        plansza[wiersz][kolumna]=aktualnyGracz;
 
         if(sprawdzCzyGraczWygral(aktualnyGracz, plansza))
         {
