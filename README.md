@@ -25,7 +25,7 @@ Gra jest przeznaczona dla dwóch graczy znajdujących się w jednym pomieszczeni
      <li>Po zakończonej partii, gracze mają możliwość ponownego zagrania lub zakończenia rozgrywki. </li>
     </ul>
   </li>
-  <li>3.	Zawartość instrukcji:
+  <li>Zawartość instrukcji:
     <ul>
       <li>Opis sposobu poruszania się po planszy,</li>
       <li>Warunki zwycięstwa,</li>
