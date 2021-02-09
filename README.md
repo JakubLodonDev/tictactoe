@@ -33,6 +33,7 @@ Gra jest przeznaczona dla dwóch graczy znajdujących się w jednym pomieszczeni
     </ul>
   </li>
 <ol>
- ## Scenariusze testowe
+  
+## Scenariusze testowe
  
 <a href="\doc\test scenarios\tic_tac_toe.xlsx" download="docs/test scenarios/make_transfer.xlsx">Pobierz scenariusz testowy wraz wykrytymi błędami - arkusz excel</a>
